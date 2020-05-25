@@ -1,51 +1,17 @@
 <html>
   <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=false">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Amy Satterlee</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="./javascript/config.js"></script>
+
     <!-- load the react component script with defer attribute so it runs onload -->
-    <!-- <script src="index.js" defer></script> -->
+    <script src="./javascript/index.js" defer></script>
     <link rel="stylesheet" type="text/css" href="./stylesheets/index.css"/>
-    <script>
-      function clickProject(project) {
-        window.location.href = `./projects/${project}/index.html`;
-      }
-    </script>
   </head>
   <body>
-    <div id="mainGrid">
-      <div id="gridOne" class="withBorder">
-        <div id="gridOneItemOne">
-          <img id="avatar" src="./images/avatar.jpg"></img>
-          <div id="username">Amy Satterlee</div>
-        </div>
-        <div id="gridOneItemTwo">
-          <div id="introduction">
-            I have been working with React professionally since 2019 and many, many moons ago, I dabbled in Android Development. I decided to apply my new interest to an old hobby and learn React Native!
-          </div>
-        </div>
-      </div>
-      <div id="gridTwo">
-        <div id="gridTwoItemOne" class="withBorder">
-          <div id="subtitle">Latest Projects</div>
-        </div>
-        <div id="gridTwoItemTwo">
-          <div id="projectGrid">
-            <div id="projectOne" class="projectCard withBorder" onclick="clickProject(1)">
-              Introduction to React View
-            </div>
-            <div id="projectTwo" class="projectCard withBorder" onclick="clickProject(2)">
-              Introduction to the Native Module
-            </div>
-            <div id="projectThree" class="projectCard withBorder" onclick="clickProject(3)">
-              FlatList versus ScrollingList
-            </div>
-          </div>
-        </div>
-        <div id="gridTwoItemThree" class="withBorder">
-          <div id="footer">Show More</div>
-        </div>
-      </div>
-    </div>
+    <div id="container"></div>
   </body>
 </html>
